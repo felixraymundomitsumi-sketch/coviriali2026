@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web de la Municipalidad Distrital de Coviriali">
+    <meta name="theme-color" content="#063B3B">
+    <title>Municipalidad Distrital de Coviriali</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="encabezado">
+    <nav class="menu" aria-label="Navegación principal">
+        <a href="#inicio" class="marca">
+            <img src="assets/insignia-coviriali.png" alt="Escudo y logo de la Municipalidad Distrital de Coviriali">
+            <span>Municipalidad Distrital de Coviriali</span>
+        </a>
+        <ul class="menu-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#contenido">Contenido</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="menu-btn" onclick="mostrarMenu()" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </nav>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+    <video class="video-fondo" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+        <source src="videos/coviriali-inicio.mp4" type="video/mp4">
+    </video>
+    <div class="capa"></div>
+    <div class="hero-contenido">
+        <img class="logo-hero" src="assets/insignia-coviriali.png" alt="Municipalidad Distrital de Coviriali">
+        <p class="etiqueta">MUNICIPALIDAD DISTRITAL DE COVIRIALI</p>
+        <h1>Municipalidad Distrital de Coviriali</h1>
+        <p>Descubre nuestros lugares, actividades, historias y experiencias a través de nuestros contenidos audiovisuales.</p>
+        <div class="hero-botones">
+            <a href="#videos" class="boton">Ver videos</a>
+            <a href="#nosotros" class="boton boton-secundario">Conócenos</a>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="seccion">
+    <div class="contenedor">
+        <p class="subtitulo">VIDEOS INSTITUCIONALES</p>
+        <h2>Conoce nuestras actividades</h2>
+        <p class="descripcion">Haz clic en la portada para reproducir cada video directamente en nuestra página o ábrelo en YouTube.</p>
+        <div class="videos-grid">
+
+            <article class="video-card">
+                <div class="video" data-video="yS_T9f_o5z0" data-title="Video institucional 1">
+                    <button class="video-portada" type="button" aria-label="Reproducir video institucional 1">
+                        <img src="https://i.ytimg.com/vi/yS_T9f_o5z0/hqdefault.jpg" alt="Portada del video institucional 1" loading="lazy">
+                        <span class="play" aria-hidden="true">▶</span>
+                    </button>
+                </div>
+                <div class="video-info">
+                    <h3>Video institucional</h3>
+                    <p>Conoce las actividades y contenidos de la Municipalidad Distrital de Coviriali.</p>
+                    <a class="boton boton-youtube" href="https://youtu.be/yS_T9f_o5z0?si=hPILYDBYfLP5Dbi3" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
+                </div>
+            </article>
+
+            <article class="video-card">
+                <div class="video" data-video="-SK0w1Qbl_M" data-title="Video de YouTube Shorts 2">
+                    <button class="video-portada" type="button" aria-label="Reproducir video destacado">
+                        <img src="https://i.ytimg.com/vi/-SK0w1Qbl_M/hqdefault.jpg" alt="Portada del video destacado" loading="lazy">
+                        <span class="play" aria-hidden="true">▶</span>
+                    </button>
+                </div>
+                <div class="video-info">
+                    <h3>Video destacado</h3>
+                    <p>Disfruta de este contenido audiovisual de la Municipalidad Distrital de Coviriali.</p>
+                    <a class="boton boton-youtube" href="https://youtube.com/shorts/-SK0w1Qbl_M?si=qLilzHfOVy4scp9o" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
+                </div>
+            </article>
+
+            <article class="video-card">
+                <div class="video" data-video="hbdDnshkom4" data-title="Video de YouTube Shorts 3">
+                    <button class="video-portada" type="button" aria-label="Reproducir video de experiencias de Coviriali">
+                        <img src="https://i.ytimg.com/vi/hbdDnshkom4/hqdefault.jpg" alt="Portada del video de experiencias de Coviriali" loading="lazy">
+                        <span class="play" aria-hidden="true">▶</span>
+                    </button>
+                </div>
+                <div class="video-info">
+                    <h3>Experiencias de Coviriali</h3>
+                    <p>Conoce más sobre nuestras actividades y experiencias.</p>
+                    <a class="boton boton-youtube" href="https://youtube.com/shorts/hbdDnshkom4?si=wRSr1WGJVPIa8EST" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contenido" class="seccion contenido">
+    <div class="contenedor">
+        <p class="subtitulo">SERVICIOS Y ACTIVIDADES</p>
+        <h2>Municipalidad Distrital de Coviriali</h2>
+        <div class="contenido-grid">
+            <article class="tarjeta"><span>🌎</span><h3>Lugares</h3><p>Conoce lugares interesantes y descubre nuevos destinos del Distrito de Coviriali.</p></article>
+            <article class="tarjeta"><span>🎥</span><h3>Videos</h3><p>Encuentra contenido audiovisual para aprender y entretenerte.</p></article>
+            <article class="tarjeta"><span>💡</span><h3>Ideas</h3><p>Trabajamos juntos por un Coviriali mejor.</p></article>
+        </div>
+    </div>
+</section>
+
+<section id="nosotros" class="seccion nosotros">
+    <div class="contenedor">
+        <p class="subtitulo">CONÓCENOS</p>
+        <h2>Nosotros</h2>
+        <div class="nosotros-intro">
+            <p>La Municipalidad Distrital de coviriali trabaja por el desarrollo y bienestar de la población, brindando servicios públicos y promoviendo una gestión eficiente, transparente y cercana a los ciudadanos.</p>
+        </div>
+        <div class="mision-vision">
+            <article class="info-institucional">
+                <h3>NUESTRA MISIÓN</h3>
+                <p>Brindar servicios publicos de calidad,<br>promoviendo el desarrollo ordenado,<br>sostenible y participativo del distrito.</p>
+            </article>
+            <article class="info-institucional">
+                <h3>NUESTRA VISIÓN</h3>
+                <p>Ser una Municipalidad moderna, transparente<br>y comprometida con el desarrolo integral de<br>Coviriali y la mejora de la calidad de vida de<br>sus habitantes.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contacto" class="seccion contacto">
+    <div class="contenedor">
+        <p class="subtitulo">CONTÁCTANOS</p>
+        <h2>Contacto</h2>
+        <p class="descripcion">¿Quieres comunicarte con la Municipalidad Distrital de Coviriali?</p>
+        <form id="formulario-contacto">
+            <label class="sr-only" for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Nombre" required>
+            <label class="sr-only" for="correo">Correo electrónico</label>
+            <input id="correo" type="email" placeholder="Correo electrónico" required>
+            <label class="sr-only" for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+            <button type="submit" class="boton">Enviar mensaje</button>
+        </form>
+    </div>
+</section>
+</main>
+
+<footer>
+    <img src="assets/insignia-coviriali.png" alt="Logo Municipalidad Distrital de Coviriali">
+    <p>© 2026 Municipalidad Distrital de Coviriali. Todos los derechos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
